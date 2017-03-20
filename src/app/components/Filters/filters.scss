@@ -1,0 +1,15 @@
+.filters {
+    font-size: 20px;
+    margin: 0 10px 10px 0;
+
+    li {
+        transition: all .3s;
+        display: inline-block;
+        padding: 0 15px;
+        opacity: 0.5;
+        &:hover:not(.disabled), &.selected:not(.disabled) {
+            opacity: 1;
+            cursor: pointer;
+        }
+    }
+}

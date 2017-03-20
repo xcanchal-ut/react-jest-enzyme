@@ -1,0 +1,59 @@
+{
+  "name": "react-jest",
+  "version": "1.0.0",
+  "description": "Spike about testing React components using Jest",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:reset": "jest -u",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch",
+    "test:watchall": "jest --watchAll"
+  },
+  "jest": {
+    "setupFiles": [
+      "./src/tests/jestsetup.js"
+    ],
+    "snapshotSerializers": [
+      "./node_modules/enzyme-to-json/serializer"
+    ],
+    "moduleNameMapper": {
+      "^.+\\.(css|scss)$": "identity-obj-proxy"
+    }
+  },
+  "keywords": [
+    "React",
+    "Jest",
+    "Unit",
+    "testing"
+  ],
+  "author": "Xavier Canchal",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "babel-jest": "^19.0.0",
+    "babel-loader": "^6.4.0",
+    "babel-preset-env": "^1.2.1",
+    "babel-preset-react": "^6.23.0",
+    "css-loader": "^0.27.3",
+    "enzyme": "^2.7.1",
+    "enzyme-to-json": "^1.5.0",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^19.0.2",
+    "node-sass": "^4.5.0",
+    "postcss-loader": "^1.3.3",
+    "postcss-scss": "^0.4.1",
+    "react-addons-test-utils": "^15.4.2",
+    "react-test-renderer": "^15.4.2",
+    "resolve-url-loader": "^2.0.2",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.14.0",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.2"
+  }
+}

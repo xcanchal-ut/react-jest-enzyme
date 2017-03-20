@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should apply the red filter when clicking on the "red" button (snapshot approach) 1`] = `
+<div
+  className="filter-layer undefined"
+/>
+`;
+
+exports[`Should apply the red filter when clicking on the "red" button (snapshot approach) 2`] = `
+<div
+  className="filter-layer red"
+/>
+`;
+
+exports[`Should render a Title component, with an h1 inside that contains "Apply filter" (snapshot approach) 1`] = `
+<Title
+  title="Apply filter"
+>
+  <h1>
+    Apply filter
+  </h1>
+</Title>
+`;
+
+exports[`Should toggle the checkbox value when clicking it (snapshot approach) 1`] = `
+<input
+  defaultChecked={true}
+  onClick={[Function]}
+  type="checkbox"
+/>
+`;
+
+exports[`Should toggle the checkbox value when clicking it (snapshot approach) 2`] = `
+<input
+  defaultChecked={false}
+  onClick={[Function]}
+  type="checkbox"
+/>
+`;
